@@ -1,0 +1,151 @@
+<project version="4">
+  <component name="BookmarksManager">
+    <option name="groups">
+      <GroupState>
+        <option name="name" value="waste_sort" />
+      </GroupState>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory"><![CDATA[{}]]></component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="waste_sort" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file://C:/Proj/app/waste_sort}" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="waste_sort" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dir{file://C:/Proj/app/waste_sort}" type="462c0819:PsiDirectoryNode" />
+              <item name="dir{file://C:/Proj/app/waste_sort/.idea}" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+          <presentation>
+            <attributes />
+            <data iconPath="expui/toolwindows/project.svg" iconPlugin="com.intellij" isLeaf="false" text="waste_sort" />
+            <item name="waste_sort" type="b2602c69:ProjectViewProjectNode" />
+            <presentation>
+              <attributes>
+                <map>
+                  <entry key="filePath" value="$PROJECT_DIR$" />
+                </map>
+              </attributes>
+              <data iconPath="expui/nodes/module.svg" iconPlugin="com.intellij" isLeaf="false" text="waste_sort" />
+              <item name="dir{file://C:/Proj/app/waste_sort}" type="462c0819:PsiDirectoryNode" />
+              <presentation>
+                <attributes>
+                  <map>
+                    <entry key="filePath" value="$PROJECT_DIR$/.idea" />
+                  </map>
+                </attributes>
+                <data iconPath="expui/nodes/folder.svg" iconPlugin="com.intellij" isLeaf="false" text=".idea" />
+                <item name="dir{file://C:/Proj/app/waste_sort/.idea}" type="462c0819:PsiDirectoryNode" />
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/.idea/.gitignore" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/fileTypes/ignored.svg" iconPlugin="com.intellij" isLeaf="true" text=".gitignore" />
+                  <item name=".gitignore" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/.idea/misc.xml" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/fileTypes/xml.svg" iconPlugin="com.intellij" isLeaf="true" text="misc.xml" />
+                  <item name="misc.xml" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/.idea/modules.xml" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/fileTypes/xml.svg" iconPlugin="com.intellij" isLeaf="true" text="modules.xml" />
+                  <item name="modules.xml" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/.idea/vcs.xml" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/fileTypes/xml.svg" iconPlugin="com.intellij" isLeaf="true" text="vcs.xml" />
+                  <item name="vcs.xml" type="ab9368bb:PsiFileNode" />
+                </presentation>
+                <presentation>
+                  <attributes>
+                    <map>
+                      <entry key="filePath" value="$PROJECT_DIR$/.idea/waste_sort.iml" />
+                    </map>
+                  </attributes>
+                  <data iconPath="expui/fileTypes/ideaModule.svg" iconPlugin="com.intellij" isLeaf="true" text="waste_sort.iml" />
+                  <item name="waste_sort.iml" type="ab9368bb:PsiFileNode" />
+                </presentation>
+              </presentation>
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="expui/nodes/library.svg" iconPlugin="com.intellij" isLeaf="false" text="External Libraries" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </presentation>
+            <presentation>
+              <attributes />
+              <data iconPath="expui/fileTypes/scratches.svg" iconPlugin="com.intellij" isLeaf="true" text="Scratches and Consoles" />
+              <item name="Scratches and Consoles" type="b85a3e1f:ScratchTreeStructureProvider$MyProjectNode" />
+            </presentation>
+          </presentation>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="ReaderModeSettings">
+    <option name="enableVisualFormatting" value="false" />
+  </component>
+  <component name="ToolWindowManager">
+    <layoutV2>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32123342" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Resources Explorer" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Problems" order="2" />
+      <window_info anchor="bottom" id="Problems View" order="3" />
+      <window_info anchor="bottom" id="Logcat" order="4" />
+      <window_info anchor="bottom" id="App Quality Insights" order="5" />
+      <window_info anchor="bottom" id="Build" order="6" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="1" weight="0.25" />
+      <window_info anchor="right" id="Device Manager" order="2" weight="0.25" />
+      <window_info anchor="right" id="Device Manager 2" order="3" weight="0.25" />
+      <window_info anchor="right" id="Running Devices" order="4" weight="0.25" />
+      <window_info anchor="right" id="StudioBot" order="5" weight="0.25" />
+      <unified_weights left="0.32123342" />
+    </layoutV2>
+    <recentWindows>
+      <value>Project</value>
+    </recentWindows>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="233" y="0" width="891" height="672" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1753633272222">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state x="233" y="0" width="891" height="672" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.672@0.0.1280.672" timestamp="1753633272222" />
+  </component>
+</project>
