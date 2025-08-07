@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  policy-rag:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+      - PINECONE_API_KEY=${PINECONE_API_KEY}
+    volumes:
+      - .:/app
+    restart: unless-stopped
