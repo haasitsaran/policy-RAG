@@ -6,3 +6,4 @@ google-generativeai==0.7.2
 langchain-core==0.2.22
 unstructured==0.14.9
 unstructured[pdf]
+python-dotenv==1.0.0
