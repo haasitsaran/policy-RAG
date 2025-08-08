@@ -23,6 +23,22 @@ app = FastAPI(
     version="1.0.0"
 )
 
+# --- API Router for v1 ---
+from fastapi import APIRouter
+from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
+
+api_v1_router = APIRouter(prefix="/api/v1", tags=["API v1"])
+security = HTTPBearer()
+
+# Simple authentication (you can enhance this)
+VALID_TOKEN = "f7fb3e8bfa0186112f7cf3a001f2913eeebe59e40ca19d0400174f3fc3f0311d"
+
+def verify_token(credentials: HTTPAuthorizationCredentials = security):
+    """Verify the authentication token."""
+    if credentials.credentials != VALID_TOKEN:
+        raise HTTPException(status_code=401, detail="Invalid authentication token")
+    return credentials.credentials
+
 # --- Health Check Endpoint ---
 @app.get("/health")
 async def health_check():
@@ -44,6 +60,20 @@ async def health_check():
         }
     except Exception as e:
         return {"status": "unhealthy", "message": f"Health check failed: {str(e)}"}
+
+@app.get("/test")
+async def test_endpoint():
+    """Simple test endpoint that doesn't require API keys."""
+    return {
+        "status": "ok",
+        "message": "Policy RAG API is deployed and running!",
+        "timestamp": time.time(),
+        "endpoints": {
+            "health": "/health",
+            "api": "/hackrx/run",
+            "docs": "/docs"
+        }
+    }
 
 @app.get("/")
 async def root():
@@ -140,9 +170,21 @@ ANSWER:"""
         print(f"An unexpected error occurred for question '{question}': {e}")
         return f"An unexpected error occurred: {e}"
 
-# --- API Endpoint ---
-@app.post("/hackrx/run", response_model=HackRxResponse)
-async def run_submission(request: HackRxRequest):
+# --- API v1 Endpoints ---
+@api_v1_router.get("/")
+async def api_v1_root():
+    """API v1 root endpoint."""
+    return {
+        "message": "HackRx 6.0 - Policy RAG API v1",
+        "version": "1.0.0",
+        "endpoints": {
+            "hackrx_run": "/api/v1/hackrx/run"
+        }
+    }
+
+@api_v1_router.post("/hackrx/run", response_model=HackRxResponse)
+async def run_submission(request: HackRxRequest, token: str = verify_token):
+    """Run submissions with authentication."""
     doc_url = request.documents[0] if isinstance(request.documents, list) else request.documents
     namespace = create_namespace_from_url(doc_url)
     index = pc.Index(PINECONE_INDEX_NAME)
@@ -161,6 +203,9 @@ async def run_submission(request: HackRxRequest):
     final_answers = await asyncio.gather(*tasks)
     
     return HackRxResponse(answers=final_answers)
+
+# Include the API v1 router
+app.include_router(api_v1_router)
 
 if __name__ == "__main__":
     import uvicorn
