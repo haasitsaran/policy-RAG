@@ -2,7 +2,9 @@ services:
   - type: web
     name: policy-rag-api
     env: python
-    buildCommand: pip install -r requirements.txt
+    buildCommand: |
+      pip install --upgrade pip
+      pip install -r requirements.txt
     startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
     healthCheckPath: /health
     envVars:
@@ -11,3 +13,4 @@ services:
       - key: PINECONE_API_KEY
         sync: false
     autoDeploy: true
+    plan: free
